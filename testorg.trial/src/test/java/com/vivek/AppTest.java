@@ -57,7 +57,7 @@ public class AppTest
     {
         int a = 10;
         int b = 5;
-        int c = App.div(a,b);
+        int c = app.div(a,b);
         assertTrue( c == (a/b) );
     } 
 
