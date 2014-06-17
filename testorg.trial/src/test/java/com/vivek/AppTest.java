@@ -60,4 +60,12 @@ public class AppTest
         int c = App.div(a,b);
         assertTrue( c == (a/b) );
     } 
+
+    public void testAppMulti()
+    {
+        int a = 3;
+        int b = 2;
+        int c = app.multiply(a, b);
+        assertTrue( c == (a*b) );
+    }
 }
