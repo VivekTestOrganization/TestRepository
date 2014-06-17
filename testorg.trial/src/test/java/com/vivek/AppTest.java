@@ -10,6 +10,13 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+
+    private App app;
+
+    public void setUp(){
+        app = new App();
+    }
+
     /**
      * Create the test case
      *
@@ -31,11 +38,19 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testAppAdd()
     {
         int a = 2;
         int b = 3;
-        int c = App.add(a,b);
-        assertTrue( c == 5 );
+        int c = app.add(a,b);
+        assertTrue( c == (a+b) );
+    }
+
+    public void testAppMinus()
+    {
+        int a = 3;
+        int b = 2;
+        int c = app.minus(a, b);
+        assertTrue( c == (a-b) );
     }
 }
