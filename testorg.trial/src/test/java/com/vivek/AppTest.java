@@ -72,4 +72,8 @@ public class AppTest
         }
 
     }
+
+    public void testConflictCreated(){
+        app.toCreateAConflict();
+     }
 }
