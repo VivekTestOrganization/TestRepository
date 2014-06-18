@@ -15,6 +15,11 @@ public class App
     }
 
     public int div(int a, int b) {
+        if(b==0)
+        {
+            throw new ArithmeticException("Divide by zero not allowed");
+        }
+
         return a/b;
     }
     

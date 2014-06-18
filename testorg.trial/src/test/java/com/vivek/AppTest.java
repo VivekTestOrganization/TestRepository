@@ -7,13 +7,12 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
-{
+public class AppTest
+        extends TestCase {
 
     private App app;
 
-    public void setUp(){
+    public void setUp() {
         app = new App();
     }
 
@@ -22,50 +21,55 @@ public class AppTest
      *
      * @param testName name of the test case
      */
-    public AppTest( String testName )
-    {
-        super( testName );
+    public AppTest(String testName) {
+        super(testName);
     }
 
     /**
      * @return the suite of tests being tested
      */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    public static Test suite() {
+        return new TestSuite(AppTest.class);
     }
 
     /**
      * Rigourous Test :-)
      */
-    public void testAppAdd()
-    {
+    public void testAppAdd() {
         int a = 2;
         int b = 3;
-        int c = app.add(a,b);
-        assertTrue( c == (a+b) );
+        int c = app.add(a, b);
+        assertTrue(c == (a + b));
     }
 
-    public void testAppMinus()
-    {
+    public void testAppMinus() {
         int a = 3;
         int b = 2;
         int c = app.minus(a, b);
-        assertTrue( c == (a-b) );
+        assertTrue(c == (a - b));
     }
-    public void testAppDiv()
-    {
+
+    public void testAppDiv() {
         int a = 10;
         int b = 5;
-        int c = app.div(a,b);
-        assertTrue( c == (a/b) );
-    } 
+        int c = app.div(a, b);
+        assertTrue(c == (a / b));
+    }
 
-    public void testAppMulti()
-    {
+    public void testAppMulti() {
         int a = 3;
         int b = 2;
         int c = app.multiply(a, b);
-        assertTrue( c == (a*b) );
+        assertTrue(c == (a * b));
+    }
+
+
+    public void testDivideByZero() {
+        try {
+            app.div(5, 0);
+        } catch (ArithmeticException ex) {
+            assertTrue(true);
+        }
+
     }
 }
