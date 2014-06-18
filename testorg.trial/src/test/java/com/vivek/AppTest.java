@@ -56,7 +56,8 @@ public class AppTest
         assertTrue(c == (a / b));
     }
 
-    public void testAppMulti() {
+    public void testAppMultiply()
+    {
         int a = 3;
         int b = 2;
         int c = app.multiply(a, b);
