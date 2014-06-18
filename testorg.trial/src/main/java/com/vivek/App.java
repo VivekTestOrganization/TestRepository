@@ -1,5 +1,6 @@
 package com.vivek;
 
+
 /**
  * Hello world!
  *
@@ -28,7 +29,7 @@ public class App
     }
 
     public void toCreateAConflict(){
-        system.out.printLn("Conflict Created !!! ");
+        System.out.println();
     }
     
 }
