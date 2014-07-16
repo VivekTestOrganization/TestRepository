@@ -27,8 +27,4 @@ public class App
     public void toCreateAConflict(){
         System.out.println();
     }
-	
-	
-	
-    
 }
