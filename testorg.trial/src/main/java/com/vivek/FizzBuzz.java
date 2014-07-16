@@ -3,6 +3,7 @@ package com.vivek;
 public class FizzBuzz {
 
     private final String fizz = "Fizz";
+	private final String buzz = "Ruzz";
     private final String buzz = "Buzz";
 
     public String translate(int numberToTranslate) {
