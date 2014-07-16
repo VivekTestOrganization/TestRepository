@@ -1,13 +1,9 @@
 package com.vivek;
 
-/**
- * Created by vd00738 on 6/18/14.
- */
-
-
 public class FizzBuzz {
 
     private final String fizz = "Fizz";
+	private final String buzz = "Ruzz";
     private final String buzz = "Buzz";
 
     public String translate(int numberToTranslate) {
